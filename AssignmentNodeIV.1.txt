@@ -1,0 +1,13 @@
+use users;
+
+db.user.insert({"name": "John Doe", "email": "john@mail.com", "phone": 12345678});
+db.user.insert({"name": "Jane Doe", "email": "jane@mail.com", "phone": 23456789});
+
+db.user.find().pretty();
+
+db.user.remove({"name": "Jane Doe"});
+
+db.school.insert({"name": "IBA", "city": "Kolding", "students": ["John Doe", "Jane Doe"]});
+db.school.insert({"name": "Zealand", "city": "Slagelse", "students": ["John Doe"]});
+
+db.school.find().pretty();

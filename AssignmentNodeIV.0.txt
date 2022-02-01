@@ -1,0 +1,5 @@
+use school;
+
+db.class.insert({"name": "Webprogramming", "lessons": 10});
+
+db.class.find().pretty();
